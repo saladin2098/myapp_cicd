@@ -25,6 +25,8 @@ jobs:
         script: |
           pwd
           ls
+          cd home/ubuntu/projects/myapp_cicd_github
+          echo "chnaged to directory"
           sudo docker compose down
           sudo docker compose up
           
