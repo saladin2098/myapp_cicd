@@ -4,5 +4,5 @@ services:
   myapp:
     build: .
     ports:
-      - "4040:4040"
+      - "5050:5050"
     container_name: mygithubapp
