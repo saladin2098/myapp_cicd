@@ -27,6 +27,7 @@ jobs:
             echo "Starting deployment..."
             cd /home/ubuntu/projects/myapp_cicd_github
             sudo docker compose down
+            docker rmi myapp_cicd_github-myapp
             git pull origin main 
             sudo docker compose up -d --build
             echo "Deployment complete."
