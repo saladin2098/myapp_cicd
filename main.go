@@ -13,7 +13,7 @@ import (
 // @title MyApp API
 // @version 1.0
 // @description This is a simple Gin application with Swagger documentation.
-// @host localhost:5050
+// @host 18.195.148.52:5050
 // @BasePath /
 func main() {
 	router := gin.Default()
