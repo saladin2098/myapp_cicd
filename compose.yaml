@@ -1,0 +1,8 @@
+version: '4.0'
+
+services:
+  myapp:
+    build: .
+    ports:
+      - "4040:4040"
+    container_name: myapp
