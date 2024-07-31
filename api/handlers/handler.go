@@ -18,7 +18,7 @@ type Message struct {
 // @Success 200 {object} Message
 // @Router /api/hello [get]
 func Hello(c *gin.Context) {
-    c.JSON(http.StatusOK, Message{Message: "Hello, World! nima gaplare!"})
+    c.JSON(http.StatusOK, Message{Message: "Hello, World! megajin!!!!!"})
 }
 
 // Goodbye godoc
