@@ -34,18 +34,18 @@ jobs:
           LIGHTSAIL_USER: ${{ secrets.SSH_USER }}
           LIGHTSAIL_SSH_KEY: ${{ secrets.SSH_KEY }}
 
-      - name: Debug SSH Connection
-        if: failure()
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          key_format: pem
-          port: 22
-          script: |
-            echo "Debug: Testing SSH connection"
-            whoami
-            pwd
-            ls -la
-          debug: true
+      # - name: Debug SSH Connection
+      #   if: failure()
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #     host: ${{ secrets.SSH_HOST }}
+      #     username: ${{ secrets.SSH_USER }}
+      #     key: ${{ secrets.SSH_KEY }}
+      #     key_format: pem
+      #     port: 22
+      #     script: |
+      #       echo "Debug: Testing SSH connection"
+      #       whoami
+      #       pwd
+      #       ls -la
+      #     debug: true
