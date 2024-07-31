@@ -6,7 +6,6 @@
         "contact": {},
         "version": "1.0"
     },
-    "host": "localhost:5050",
     "basePath": "/",
     "paths": {
         "/api/goodbye": {

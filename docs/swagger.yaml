@@ -5,7 +5,6 @@ definitions:
       message:
         type: string
     type: object
-host: localhost:5050
 info:
   contact: {}
   description: This is a simple Gin application with Swagger documentation.
